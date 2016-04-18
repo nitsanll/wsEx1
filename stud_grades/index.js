@@ -30,6 +30,6 @@ exports.getStudByYear = function(year)
     }
     studString = studString.substring(0, studString.length-1);
     studString += "]";
-    var studJson = JSON.parse(studString.toString());
+    var studJson = JSON.parse(studString);
     return studJson;
 }  
