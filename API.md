@@ -1,5 +1,3 @@
-# wsEx1
-
 Students Grades Web Service
 ---------------------------
 
