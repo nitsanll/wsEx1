@@ -1,10 +1,12 @@
 var jsonFile = require('../data/data.json');
 
+//get all student's details in json
 exports.getAllStud = function()
 {
    return jsonFile;
 }
 
+//get a specific student details 
 exports.getStudById = function(id1)
 {
     for(var i = 0; i<jsonFile.students.length; i++)
@@ -14,6 +16,7 @@ exports.getStudById = function(id1)
     }
 }
 
+//get number of student's details by a specific year
 exports.getStudByYear = function(year)
 {
     var studString = "[";
@@ -27,6 +30,6 @@ exports.getStudByYear = function(year)
     }
     studString = studString.substring(0, studString.length-1);
     studString += "]";
-    studJson = JSON.parse(studString.toString());
+    var studJson = JSON.parse(studString.toString());
     return studJson;
 }  
